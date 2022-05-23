@@ -1,0 +1,38 @@
+.app__header {
+  height: 100vh;
+
+  .app__header-content {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+
+    .app__header-img {
+      height: 100vh;
+      width: 50%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .app__header-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      h1 {
+        color: var(--secondary-color);
+        font-size: 54px;
+        font-weight: 600;
+      }
+      p {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
