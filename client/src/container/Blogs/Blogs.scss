@@ -1,0 +1,13 @@
+.app__blogs {
+  width: 80%;
+
+  .app__blogs-main {
+    min-height: 100vh;
+    width: 70%;
+  }
+
+  .app__blogs-aside {
+    width: 30%;
+    background-color: green;
+  }
+}
