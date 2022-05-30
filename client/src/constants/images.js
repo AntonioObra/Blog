@@ -13,6 +13,8 @@ import logo2 from "../assets/logo2.svg";
 import trokut from "../assets/trokut.svg";
 
 import books from "../assets/books.svg";
+import lamp from "../assets/lamp.svg";
+import bookshelf from "../assets/bookshelf.svg";
 export default {
   logo,
   testAvatar,
@@ -20,4 +22,6 @@ export default {
   logo2,
   trokut,
   books,
+  lamp,
+  bookshelf,
 };
