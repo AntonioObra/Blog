@@ -1,0 +1,30 @@
+.app__recc {
+  width: 100%;
+  min-height: 100vh;
+
+  .app__recc-header {
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .app__recc-header-img {
+      width: 50%;
+    }
+
+    .app__recc-header-info {
+      width: 50%;
+
+      text-align: center;
+
+      h1 {
+        font-size: 44px;
+      }
+      p {
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+  }
+}
