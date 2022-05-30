@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
@@ -50,14 +50,14 @@
     flex-direction: column;
 
     a {
-      color: var(--white-color);
+      color: var(--black-color);
       text-decoration: none;
       flex-direction: column;
       font-weight: 500;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: var(--accent-color);
+        color: var(--black-color);
       }
     }
 

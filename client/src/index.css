@@ -4,10 +4,11 @@
 
 :root {
   --font-base: "Poppins", sans-serif;
-  --primary-color: #fbe8e2;
+  --primary-color: #ffffff;
   --secondary-color: #3432b7;
-  --accent-color: #ef5b76;
-  --white-color: #faf5f3;
+  /* --accent-color: #ee4f6c; */
+  --accent-color: #edc829;
+  --white-color: #ffffff;
   --black-color: #000000;
 }
 

@@ -1,5 +1,5 @@
 .app__header {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 
   .app__header-content {
@@ -10,7 +10,7 @@
     background-color: var(--primary-color);
 
     .app__header-img {
-      height: 100vh;
+      height: 80vh;
       width: 50%;
       img {
         height: 100%;
@@ -27,12 +27,12 @@
       width: 50%;
       margin: 0 auto;
       h1 {
-        color: var(--secondary-color);
+        color: var(--black-color);
         font-size: 54px;
         font-weight: 600;
       }
       p {
-        color: var(--secondary-color);
+        color: var(--black-color);
       }
     }
   }

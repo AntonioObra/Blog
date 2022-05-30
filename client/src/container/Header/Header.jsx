@@ -9,7 +9,7 @@ const Header = () => {
     <div className="app__header app">
       <div className="app__header-content">
         <div className="app__header-img">
-          <img src={images.logo} alt="" />
+          <img src={images.logo2} alt="" />
         </div>
 
         <div className="app__header-info">
@@ -21,4 +21,4 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header, "home");
+export default Header;
