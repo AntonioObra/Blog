@@ -1,0 +1,12 @@
+import React from "react";
+import RecCard from "./RecCard/RecCard";
+
+const RecCards = () => {
+  return (
+    <>
+      <RecCard />
+    </>
+  );
+};
+
+export default RecCards;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Recommendations.scss";
 import { images } from "../../constants";
+import { RecCards } from "../../components";
 
 const Recommendations = () => {
   return (
@@ -18,6 +19,7 @@ const Recommendations = () => {
           </p>
         </div>
       </div>
+      <RecCards />
     </div>
   );
 };
