@@ -7,7 +7,7 @@ const RecCard = ({ book }) => {
   console.log(book);
   return (
     <div className="RecCard">
-      <div className="RecCard-Header">
+      <div className={`RecCard-Header RecCard-Header-${book.color}`}>
         <img src={urlFor(book.imageurl)} alt="" />
       </div>
       <div className="RecCard-Body">
@@ -16,7 +16,7 @@ const RecCard = ({ book }) => {
           <h2>{book.bookTitle}</h2>
         </div>
       </div>
-      <div className="RecCard-Footer">
+      <div className={`RecCard-Footer RecCard-Footer-${book.color}`}>
         <button>
           <p> read more</p>
         </button>
