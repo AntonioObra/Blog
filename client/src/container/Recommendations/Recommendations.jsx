@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Recommendations.scss";
 import { images } from "../../constants";
 import { RecCards } from "../../components";
+import { urlFor, client } from "../../client";
 
 const Recommendations = () => {
+  const [bookRecs, setBookRecs] = useState([]);
+
+  useEffect(() => {
+    const query = "*[_type == 'booksRec']";
+    client.fetch(query).then((data) => {
+      setBookRecs(data);
+    });
+  }, []);
+
+  console.log(bookRecs);
   return (
     <div className="app__recc app">
       <div className="app__recc-header">
@@ -20,7 +31,7 @@ const Recommendations = () => {
         </div>
       </div>
       <div className="app__recc-body">
-        <RecCards />
+        <RecCards books={bookRecs} />
       </div>
     </div>
   );
