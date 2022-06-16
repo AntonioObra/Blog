@@ -19,7 +19,9 @@ const Recommendations = () => {
           </p>
         </div>
       </div>
-      <RecCards />
+      <div className="app__recc-body">
+        <RecCards />
+      </div>
     </div>
   );
 };

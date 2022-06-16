@@ -15,6 +15,7 @@ import trokut from "../assets/trokut.svg";
 import books from "../assets/books.svg";
 import lamp from "../assets/lamp.svg";
 import bookshelf from "../assets/bookshelf.svg";
+import witcherBook from "../assets/witcherBook.jpg";
 export default {
   logo,
   testAvatar,
@@ -24,4 +25,5 @@ export default {
   books,
   lamp,
   bookshelf,
+  witcherBook,
 };

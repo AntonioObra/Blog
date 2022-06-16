@@ -5,6 +5,8 @@ const RecCards = () => {
   return (
     <>
       <RecCard />
+      <RecCard />
+      <RecCard />
     </>
   );
 };

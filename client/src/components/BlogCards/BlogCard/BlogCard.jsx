@@ -6,7 +6,7 @@ import { IoBookSharp } from "react-icons/io5";
 
 const BlogCard = () => {
   return (
-    <div className="BlogCard  ">
+    <div className="BlogCard">
       <div className="BlogCard-Content">
         <div className="BlogCard-Header ">
           <img src={images.testAvatar} alt="" />
