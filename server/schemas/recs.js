@@ -1,6 +1,6 @@
 export default {
-  name: "booksRec",
-  title: "BooksRec",
+  name: "recs",
+  title: "Recs",
   type: "document",
   fields: [
     {
@@ -9,8 +9,8 @@ export default {
       type: "string",
     },
     {
-      name: "bookTitle",
-      title: "BookTitle",
+      name: "Title",
+      title: "Title",
       type: "string",
     },
     {
@@ -24,6 +24,11 @@ export default {
     {
       name: "color",
       title: "Color",
+      type: "string",
+    },
+    {
+      name: "type",
+      title: "Type",
       type: "string",
     },
   ],

@@ -3,20 +3,20 @@ import "./RecCard.scss";
 import { images } from "../../../constants";
 import { urlFor } from "../../../client";
 
-const RecCard = ({ book }) => {
-  console.log(book);
+const RecCard = ({ rec }) => {
+  console.log(rec);
   return (
     <div className="RecCard">
-      <div className={`RecCard-Header RecCard-Header-${book.color}`}>
-        <img src={urlFor(book.imageurl)} alt="" />
+      <div className={`RecCard-Header RecCard-Header-${rec.color}`}>
+        <img src={urlFor(rec.imageurl)} alt="" />
       </div>
       <div className="RecCard-Body">
         <div className="RecCard-Body-content">
-          <h4>{book.authorName}</h4>
-          <h2>{book.bookTitle}</h2>
+          <h4>{rec.authorName}</h4>
+          <h2>{rec.Title}</h2>
         </div>
       </div>
-      <div className={`RecCard-Footer RecCard-Footer-${book.color}`}>
+      <div className={`RecCard-Footer RecCard-Footer-${rec.color}`}>
         <button>
           <p> read more</p>
         </button>

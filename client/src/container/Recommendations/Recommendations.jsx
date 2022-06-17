@@ -5,16 +5,27 @@ import { RecCards } from "../../components";
 import { urlFor, client } from "../../client";
 
 const Recommendations = () => {
-  const [bookRecs, setBookRecs] = useState([]);
+  const [recs, setRecs] = useState([]);
+  const [activeFilter, setActiveFilter] = useState("Books");
+  const [filterRecs, setFilterRecs] = useState([]);
 
   useEffect(() => {
-    const query = "*[_type == 'booksRec']";
+    const query = "*[_type == 'recs']";
     client.fetch(query).then((data) => {
-      setBookRecs(data);
+      setRecs(data);
     });
   }, []);
 
-  console.log(bookRecs);
+  useEffect(() => {
+    setFilterRecs(recs.filter((rec) => rec.type.includes("Books")));
+  }, [recs]);
+
+  const handleTagFilter = (item) => {
+    setActiveFilter(item);
+
+    setFilterRecs(recs.filter((rec) => rec.type.includes(item)));
+  };
+
   return (
     <div className="app__recc app">
       <div className="app__recc-header">
@@ -30,8 +41,15 @@ const Recommendations = () => {
           </p>
         </div>
       </div>
+      <div className="app__recc-body-filters">
+        {["Books", "Videogames", "Movies"].map((item, index) => (
+          <button key={index} onClick={() => handleTagFilter(item)}>
+            {item}
+          </button>
+        ))}
+      </div>
       <div className="app__recc-body">
-        <RecCards books={bookRecs} />
+        <RecCards recs={filterRecs} />
       </div>
     </div>
   );

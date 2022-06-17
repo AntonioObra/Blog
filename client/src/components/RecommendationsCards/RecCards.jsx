@@ -1,11 +1,11 @@
 import React from "react";
 import RecCard from "./RecCard/RecCard";
 
-const RecCards = ({ books }) => {
+const RecCards = ({ recs }) => {
   return (
     <>
-      {books.map((book, index) => (
-        <RecCard book={book} key={index} />
+      {recs.map((rec, index) => (
+        <RecCard rec={rec} key={index} />
       ))}
     </>
   );
