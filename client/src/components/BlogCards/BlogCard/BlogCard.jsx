@@ -1,14 +1,10 @@
 import React from "react";
 import "./BlogCard.scss";
-import { images } from "../../../constants";
-import { BiDotsHorizontalRounded } from "react-icons/bi";
-import { IoBookSharp } from "react-icons/io5";
 import { urlFor } from "../../../client";
 import BlockContent from "@sanity/block-content-to-react";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
-  console.log(blog);
-
   const serializers = {
     types: {
       code: (props) => (
@@ -23,14 +19,16 @@ const BlogCard = ({ blog }) => {
     <div className="BlogCard">
       <div className="BlogCard-Content">
         <div className="BlogCard-Header ">
-          <img src={images.testAvatar} alt="" />
-          <h5>Antonio Obradović</h5>
+          <img src={urlFor(blog.author.image)} alt="" />
+          <h5>{blog.author.name}</h5>
           <p> &#183; </p>
           <p id="BlogCard-Header-Date">{blog._createdAt}</p>
         </div>
         <div className="BlogCard-Main ">
           <div className="BlogCard-Main-Content">
-            <h3>{blog.title}</h3>
+            <Link to={`/blogs/${blog._id}`} style={{ textDecoration: "none" }}>
+              <h3> {blog.title}</h3>
+            </Link>
 
             <BlockContent
               serializers={serializers}
@@ -43,7 +41,7 @@ const BlogCard = ({ blog }) => {
         <div className="BlogCard-Footer">
           <div className="BlogCard-Footer-Left">
             {" "}
-            <button>Portfolio</button>
+            <button>{blog.categories[0].title}</button>
             <p>3 min read</p>
             <p> &#183; </p>
             <p>Selected for you</p>
