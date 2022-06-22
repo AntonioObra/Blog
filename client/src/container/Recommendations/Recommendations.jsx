@@ -43,9 +43,9 @@ const Recommendations = () => {
       </div>
       <div className="app__recc-body-filters">
         {["Books", "Videogames", "Movies"].map((item, index) => (
-          <button key={index} onClick={() => handleTagFilter(item)}>
-            {item}
-          </button>
+          <div key={index} onClick={() => handleTagFilter(item)}>
+            <p> {item}</p>
+          </div>
         ))}
       </div>
       <div className="app__recc-body">

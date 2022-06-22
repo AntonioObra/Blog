@@ -4,7 +4,7 @@
 
   .app__recc-header {
     width: 80%;
-    padding: 10rem 0;
+    padding-top: 10rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,32 @@
         margin: 0 auto;
         width: 80%;
         color: var(--white-color);
+      }
+    }
+  }
+
+  .app__recc-body-filters {
+    width: 20%;
+    margin: auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      background-color: var(--accent-color);
+      border-radius: 0.5rem;
+      color: var(--white-color);
+      cursor: pointer;
+      margin: 0.5rem;
+      font-weight: 800;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+      p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        // text-align: left;
+        // text-transform: lowercase;
       }
     }
   }
