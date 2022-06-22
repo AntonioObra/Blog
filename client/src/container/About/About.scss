@@ -1,7 +1,7 @@
 .app__about {
   height: 60vh;
   width: 100%;
-  margin: 2rem 0;
+  // margin: 2rem 0;
 
   .app__about-content {
     margin: 0 auto;
@@ -30,13 +30,13 @@
       text-align: center;
       margin: 0 auto;
       h1 {
-        color: var(--black-color);
+        color: var(--white-color);
         font-size: 44px;
         font-weight: 600;
       }
       p {
         width: 80%;
-        color: var(--black-color);
+        color: var(--white-color);
       }
     }
   }

@@ -5,11 +5,24 @@
   justify-content: space-evenly;
   align-items: top;
   font-family: var(--font-base);
-  margin: 2rem 0;
+  padding: 4rem 0;
 
   h1 {
     font-size: 44px;
     text-align: center;
+    color: var(--white-color);
+  }
+
+  input {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--white-color);
+    font-family: var(--font-base);
+    outline: none;
+    padding: 0.95rem;
+    width: 65%;
+    margin: 2rem auto;
   }
 
   .app__blogs-main {
@@ -36,72 +49,32 @@
     }
   }
 
-  .app__blogs-aside {
-    margin: 0 auto;
-    width: 60%;
+  .Aside-Tags {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: top;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-    .Aside-Search-Div {
-      background-color: var(--white-color);
-      display: flex;
-      justify-content: space-between;
-      border-radius: 24px;
-      border: 2px solid rgba(0, 0, 0, 0.605);
-      padding: 8px 10px;
-      margin: 30px 0;
-      width: 80%;
-
-      button {
-        width: 5%;
-        background-color: var(--white-color);
-        outline: none;
-        border: none;
-        cursor: pointer;
-      }
-      input {
-        width: 95%;
-        outline: none;
-        border: none;
-        background-color: var(--white-color);
-        font-size: 16px;
-      }
+    .Aside-Tags-Filter {
+      margin: 0.2rem;
+      color: var(--white-color);
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .Casual {
+      background-color: var(--primary-color);
+      color: var(--black-color);
     }
 
-    img {
-      width: 100%;
-      height: auto;
+    .Books {
+      background-color: var(--accent-color);
     }
-
-    .Aside-Tags {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-
-      .Aside-Tags-Filter {
-        margin: 0.2rem;
-        color: var(--white-color);
-        padding: 8px 12px;
-        border-radius: 20px;
-        cursor: pointer;
-      }
-      .Casual {
-        background-color: var(--primary-color);
-        color: var(--black-color);
-      }
-
-      .Books {
-        background-color: var(--accent-color);
-      }
-      .Videogames {
-        background-color: var(--secondary-color);
-      }
-      .Movies {
-        background-color: var(--black-color);
-      }
+    .Videogames {
+      background-color: var(--secondary-color);
+    }
+    .Movies {
+      background-color: var(--black-color);
     }
   }
 }

@@ -4,7 +4,8 @@
 
   .app__recc-header {
     width: 80%;
-    margin: 10rem auto;
+    padding: 10rem 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +21,12 @@
 
       h1 {
         font-size: 44px;
+        color: var(--white-color);
       }
       p {
         margin: 0 auto;
         width: 80%;
+        color: var(--white-color);
       }
     }
   }

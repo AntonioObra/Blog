@@ -1,7 +1,7 @@
 .BlogCard {
   width: 100%;
   min-height: 250px;
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   display: flex;
   align-items: top;
   justify-content: space-between;
@@ -27,12 +27,17 @@
     font-weight: 400;
     margin-right: 8px;
     cursor: pointer;
+    color: var(--white-color);
   }
 
+  p {
+    color: var(--white-color);
+  }
   #BlogCard-Header-Date {
     font-size: 16px;
     font-weight: 300;
     margin-left: 8px;
+    color: var(--white-color);
   }
 
   img {
@@ -55,6 +60,10 @@
       font-weight: 500;
       font-size: 24px;
       cursor: pointer;
+      color: var(--white-color);
+    }
+    p {
+      color: var(--white-color);
     }
   }
 
@@ -76,7 +85,7 @@
     width: 70%;
 
     button {
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
       outline: none;
       border: none;
       padding: 10px 20px;
@@ -88,6 +97,7 @@
     p {
       margin-left: 8px;
       font-size: 14px;
+      color: var(--white-color);
     }
   }
 

@@ -33,13 +33,6 @@ const BlogCard = () => {
             <p> &#183; </p>
             <p>Selected for you</p>
           </div>
-
-          <div className="BlogCard-Footer-Right">
-            {/* save button */}
-            <IoBookSharp style={{ cursor: "pointer" }} />
-            {/* options button */}
-            <BiDotsHorizontalRounded style={{ cursor: "pointer" }} />
-          </div>
         </div>
         <hr></hr>
       </div>
