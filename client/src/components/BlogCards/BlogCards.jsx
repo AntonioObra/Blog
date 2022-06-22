@@ -1,13 +1,12 @@
 import React from "react";
 import BlogCard from "./BlogCard/BlogCard";
 
-const BlogCards = () => {
+const BlogCards = ({ blogs }) => {
   return (
     <>
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
+      {blogs.map((blog, index) => (
+        <BlogCard blog={blog} key={index} />
+      ))}
     </>
   );
 };

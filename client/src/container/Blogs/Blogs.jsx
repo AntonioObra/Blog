@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AppWrap } from "../../wrapper";
 import { BlogCards } from "../../components";
 import { IoIosSearch } from "react-icons/io";
 import { images } from "../../constants";
+import { urlFor, client } from "../../client";
 import "./Blogs.scss";
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  //for author use author->{name, image or whatever you want to get}
+  useEffect(() => {
+    const query = `*[_type == 'post'] {
+      ...,
+      categories[]-> ,
+      author->{name, image}
+      }
+      `;
+    client.fetch(query).then((data) => {
+      setBlogs(data);
+    });
+  }, []);
+
   return (
     <div className=" app__blogs">
       <h1>blogs</h1>
@@ -24,7 +40,7 @@ const Blogs = () => {
 
       <main className="app__blogs-main">
         <div className="app__blogs-main-blogs">
-          <BlogCards />
+          <BlogCards blogs={blogs} />
         </div>
       </main>
     </div>

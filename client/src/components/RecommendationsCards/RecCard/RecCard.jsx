@@ -4,7 +4,6 @@ import { images } from "../../../constants";
 import { urlFor } from "../../../client";
 
 const RecCard = ({ rec }) => {
-  console.log(rec);
   return (
     <div className="RecCard">
       <div className={`RecCard-Header RecCard-Header-${rec.color}`}>
