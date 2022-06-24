@@ -2,35 +2,22 @@
   min-height: 100vh;
   background-color: var(--primary-color);
   padding: 5rem 0;
-  display: flex;
-  flex-direction: column;
 
   font-family: var(--font-base);
+}
 
-  .SingleBlog-header {
-    margin: 4rem auto;
-    h1 {
-      color: var(--secondary-color);
-      font-size: 52px;
-      text-align: center;
-    }
-    h5 {
-      color: var(--secondary-color);
-      font-size: 22px;
-      text-align: center;
-    }
-  }
+.SingleBlog-main {
+  width: 80%;
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
 
-  .SingleBlog-content {
-    width: 50%;
-    margin: 2rem auto;
-    color: var(--white-color);
-    line-height: 2;
+.SingleBlog-content {
+  width: 65%;
+}
 
-    img {
-      width: 60%;
-      height: auto;
-      margin: 2rem auto;
-    }
-  }
+.SingleBlog-aside {
+  width: 30%;
 }

@@ -1,26 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { getPosts, getPostDetails } from "../../services";
+import {
+  BlogWidget,
+  SingleBlogCard,
+  CommentForm,
+  Comments,
+} from "../../components";
 
 import "./SingleBlog.scss";
 
 const SingleBlog = () => {
   const [blog, setBlog] = useState([]);
+  const [relatedBlogs, setRelatedBlogs] = useState([]);
 
   const { id } = useParams();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    getPostDetails(id).then((post) => setBlog(post));
+    getPosts().then((posts) => setRelatedBlogs(posts));
+  }, [id]);
 
-  console.log(blog);
-  console.log(id);
   return (
     <>
-      {blog.length > 0 ? (
+      {blog.categories ? (
         <div className="SingleBlog">
-          <div className="SingleBlog-header">
-            <h1>{blog[0].title}</h1>
-            <h5>{blog[0].slug.current}</h5>
+          <div className="SingleBlog-main">
+            <div className="SingleBlog-content">
+              {" "}
+              <SingleBlogCard blog={blog} />
+              <CommentForm slug={blog.slug} />
+              <Comments slug={blog.slug} />
+            </div>
+            <div className="SingleBlog-aside">
+              <BlogWidget
+                slug={blog.slug}
+                categories={blog.categories.map((category) => category.slug)}
+              />
+            </div>
           </div>
-          <div className="SingleBlog-content"></div>
         </div>
       ) : (
         <div className="SingleBlog"></div>

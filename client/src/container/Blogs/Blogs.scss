@@ -55,7 +55,15 @@
 
     .app__blogs-main-aside {
       width: 30%;
-      // background: red;
+      position: sticky;
+      position: -webkit-sticky;
+      height: 30%;
+      top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: top;
+      // margin-top: 1rem;
     }
   }
 

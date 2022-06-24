@@ -1,0 +1,87 @@
+.CommentForm {
+  width: 100%;
+  background-color: #181717;
+  border-radius: 10px;
+
+  h3 {
+    text-align: center;
+    color: var(--white-color);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+  }
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-Form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.CommentForm-Form-textarea {
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    margin: 2rem auto;
+    height: 150px;
+    resize: vertical;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: var(--font-base);
+  }
+}
+
+.CommentForm-Form-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    width: 45%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+    border: 2px solid var(--accent-color);
+    outline: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: var(--font-base);
+  }
+}
+
+.CommentForm-Form-checkbox {
+  margin: 2rem 0;
+  color: var(--white-color);
+  label {
+    margin-left: 1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    cursor: pointer;
+  }
+}
+
+.CommentForm-Form-button {
+  button {
+    outline: none;
+    background-color: var(--white-color);
+    padding: 0.8rem 2rem;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    font-family: var(--font-base);
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--secondary-color);
+    }
+  }
+}

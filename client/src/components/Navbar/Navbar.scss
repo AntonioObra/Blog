@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  position: fixed;
+  // position: fixed;
   z-index: 2;
   font-family: var(--font-base);
 
@@ -25,13 +25,18 @@
   justify-content: flex-start;
   align-items: center;
 
-  img {
-    width: 30px;
-    height: 30px;
+  h3 {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+    &:hover {
+      color: var(--white-color);
+
+      text-decoration: underline;
+      text-decoration-color: var(--secondary-color);
     }
   }
 }
@@ -39,7 +44,7 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   margin: 0 auto;
@@ -55,9 +60,14 @@
       flex-direction: column;
       font-weight: 500;
       transition: all 0.3s ease-in-out;
+      text-decoration: underline;
+      text-decoration-color: var(--secondary-color);
 
       &:hover {
-        color: var(--black-color);
+        color: var(--secondary-color);
+
+        text-decoration: underline;
+        text-decoration-color: var(--white-color);
       }
     }
 

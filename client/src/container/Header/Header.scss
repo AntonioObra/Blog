@@ -10,7 +10,7 @@
     background-color: var(--primary-color);
 
     .app__header-img {
-      height: 100vh;
+      height: 70vh;
       width: 50%;
       img {
         height: 100%;
@@ -30,9 +30,14 @@
         color: var(--white-color);
         font-size: 54px;
         font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+        // border-bottom: 2px solid var(--secondary-color);
       }
       p {
         color: var(--white-color);
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
       }
     }
   }

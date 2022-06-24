@@ -41,7 +41,7 @@ const Blogs = () => {
 
   return (
     <div className=" app__blogs">
-      <h1>blogs</h1>
+      {/* <h1>blogs</h1> */}
 
       <input type="text" placeholder="Search" onChange={handleChange} />
 
@@ -62,7 +62,7 @@ const Blogs = () => {
               {filterBlogs.length > 0 ? (
                 <BlogCards blogs={filterBlogs} />
               ) : (
-                <h3 id="ups">Ops! Try searching from something else...</h3>
+                <h3 id="ups">Ops! Try searching for something else...</h3>
               )}
             </>
           ) : (
