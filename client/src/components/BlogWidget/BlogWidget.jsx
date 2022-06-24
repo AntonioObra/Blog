@@ -35,7 +35,13 @@ const BlogWidget = ({ categories, slug }) => {
             </div>
 
             <div className="BlogWidget-content-info">
-              <h5>{blog.title}</h5>
+              <Link
+                to={`/blogs/${blog.slug}`}
+                style={{ textDecoration: "none" }}
+              >
+                <h5>{blog.title}</h5>
+              </Link>
+
               <p>{moment(blog.createdAt).format("DD MMM, YYYY")}</p>
             </div>
           </div>

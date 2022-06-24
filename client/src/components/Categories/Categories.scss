@@ -1,0 +1,25 @@
+.Categories {
+  width: 100%;
+  background-color: #181717;
+  border-radius: 10px;
+
+  h2 {
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  padding: 1rem 0;
+
+  .Categories-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 80%;
+    margin: 2rem auto;
+
+    span {
+      color: var(--white-color);
+      border-bottom: 1px solid var(--secondary-color);
+    }
+  }
+}

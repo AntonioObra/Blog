@@ -8,6 +8,7 @@
     color: var(--secondary-color);
   }
   padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .BlogWidget-Blogs {
@@ -24,10 +25,16 @@
   padding: 1rem 0;
   h5 {
     font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--white-color);
   }
   img {
     border-radius: 50%;
     object-fit: cover;
+  }
+  p {
+    font-size: 12px;
   }
 
   .BlogWidget-content-info {

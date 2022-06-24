@@ -31,7 +31,7 @@
     margin: 2rem auto;
     display: flex;
     align-items: top;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .app__blogs-main-img {
       width: 10%;
       // margin: 0 auto;
@@ -45,7 +45,7 @@
     }
 
     .app__blogs-main-blogs {
-      width: 75%;
+      width: 65%;
 
       #ups {
         text-align: center;
@@ -54,7 +54,7 @@
     }
 
     .app__blogs-main-aside {
-      width: 25%;
+      width: 30%;
       // background: red;
     }
   }
