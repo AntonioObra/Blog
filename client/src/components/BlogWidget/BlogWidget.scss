@@ -1,0 +1,36 @@
+.BlogWidget {
+  width: 100%;
+  background-color: #181717;
+  border-radius: 10px;
+
+  h2 {
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  padding: 1rem 0;
+}
+
+.BlogWidget-Blogs {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.BlogWidget-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--white-color);
+  padding: 1rem 0;
+  h5 {
+    font-weight: 400;
+  }
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .BlogWidget-content-info {
+    padding-left: 1rem;
+  }
+}

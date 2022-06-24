@@ -1,32 +1,49 @@
 import React, { useState, useEffect } from "react";
 import { AppWrap } from "../../wrapper";
-import { BlogCards } from "../../components";
-import { IoIosSearch } from "react-icons/io";
-import { images } from "../../constants";
-import { urlFor, client } from "../../client";
+import { BlogCards, BlogWidget, Categories } from "../../components";
+import { getPosts } from "../../services";
+
 import "./Blogs.scss";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
+  const [filterBlogs, setFilterBlogs] = useState([]);
+
+  console.log(filterBlogs);
 
   //for author use author->{name, image or whatever you want to get}
   useEffect(() => {
-    const query = `*[_type == 'post'] {
-      ...,
-      categories[]-> ,
-      author->{name, image}
-      }
-      `;
-    client.fetch(query).then((data) => {
-      setBlogs(data);
-    });
+    async function fetchBlogs() {
+      const posts = await getPosts();
+      setBlogs(posts);
+    }
+
+    fetchBlogs();
   }, []);
+
+  console.log(blogs);
+
+  const handleChange = (e) => {
+    setSearchInput(e.target.value);
+    if (searchInput !== "") {
+      const filteredData = blogs.filter((blog) => {
+        return Object.values(blog)
+          .join("")
+          .toLocaleLowerCase()
+          .includes(searchInput.toLocaleLowerCase());
+      });
+      setFilterBlogs(filteredData);
+    } else {
+      setFilterBlogs(blogs);
+    }
+  };
 
   return (
     <div className=" app__blogs">
       <h1>blogs</h1>
 
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Search" onChange={handleChange} />
 
       {/* <img src={images.computer} alt="" /> */}
       {/* <h3>Topics</h3>
@@ -40,7 +57,21 @@ const Blogs = () => {
 
       <main className="app__blogs-main">
         <div className="app__blogs-main-blogs">
-          <BlogCards blogs={blogs} />
+          {searchInput !== "" ? (
+            <>
+              {filterBlogs.length > 0 ? (
+                <BlogCards blogs={filterBlogs} />
+              ) : (
+                <h3 id="ups">Ops! Try searching from something else...</h3>
+              )}
+            </>
+          ) : (
+            <BlogCards blogs={blogs} />
+          )}
+        </div>
+        <div className="app__blogs-main-aside">
+          <BlogWidget />
+          <Categories />
         </div>
       </main>
     </div>

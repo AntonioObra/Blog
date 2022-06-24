@@ -2,19 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./Recommendations.scss";
 import { images } from "../../constants";
 import { RecCards } from "../../components";
-import { urlFor, client } from "../../client";
 
 const Recommendations = () => {
   const [recs, setRecs] = useState([]);
   const [activeFilter, setActiveFilter] = useState("Books");
   const [filterRecs, setFilterRecs] = useState([]);
 
-  useEffect(() => {
-    const query = "*[_type == 'recs']";
-    client.fetch(query).then((data) => {
-      setRecs(data);
-    });
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     setFilterRecs(recs.filter((rec) => rec.type.includes("Books")));

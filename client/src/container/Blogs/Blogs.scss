@@ -27,7 +27,7 @@
 
   .app__blogs-main {
     min-height: 100vh;
-    width: 100%;
+    width: 80%;
     margin: 2rem auto;
     display: flex;
     align-items: top;
@@ -45,7 +45,17 @@
     }
 
     .app__blogs-main-blogs {
-      width: 60%;
+      width: 75%;
+
+      #ups {
+        text-align: center;
+        color: var(--secondary-color);
+      }
+    }
+
+    .app__blogs-main-aside {
+      width: 25%;
+      // background: red;
     }
   }
 

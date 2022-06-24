@@ -1,13 +1,11 @@
 import React from "react";
 import "./RecCard.scss";
-import { images } from "../../../constants";
-import { urlFor } from "../../../client";
 
 const RecCard = ({ rec }) => {
   return (
     <div className="RecCard">
       <div className={`RecCard-Header RecCard-Header-${rec.color}`}>
-        <img src={urlFor(rec.imageurl)} alt="" />
+        {/* <img src={urlFor(rec.imageurl)} alt="" /> */}
       </div>
       <div className="RecCard-Body">
         <div className="RecCard-Body-content">

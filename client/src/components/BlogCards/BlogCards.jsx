@@ -5,7 +5,7 @@ const BlogCards = ({ blogs }) => {
   return (
     <>
       {blogs.map((blog, index) => (
-        <BlogCard blog={blog} key={index} />
+        <BlogCard blog={blog.node} key={index} />
       ))}
     </>
   );
