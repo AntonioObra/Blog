@@ -17,7 +17,6 @@ const BlogWidget = ({ categories, slug }) => {
     }
   }, [slug]);
 
-  console.log(relatedBlogs);
   return (
     <div className="BlogWidget">
       <h2>{slug ? "Related Blogs" : "Recent Blogs"}</h2>

@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { AppWrap } from "../../wrapper";
-import { BlogCards, BlogWidget, Categories } from "../../components";
-import { getPosts } from "../../services";
+import {
+  BlogCards,
+  BlogWidget,
+  Categories,
+  FeaturedCards,
+} from "../../components";
+import { getPosts, getFeaturedPosts } from "../../services";
 
 import "./Blogs.scss";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [featuredBlogs, setFeaturedBlogs] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [filterBlogs, setFilterBlogs] = useState([]);
-
-  console.log(filterBlogs);
 
   //for author use author->{name, image or whatever you want to get}
   useEffect(() => {
@@ -19,10 +23,14 @@ const Blogs = () => {
       setBlogs(posts);
     }
 
-    fetchBlogs();
-  }, []);
+    async function fetchFeauteredBlogs() {
+      const posts = await getFeaturedPosts();
+      setFeaturedBlogs(posts);
+    }
 
-  console.log(blogs);
+    fetchBlogs();
+    fetchFeauteredBlogs();
+  }, []);
 
   const handleChange = (e) => {
     setSearchInput(e.target.value);
@@ -42,7 +50,7 @@ const Blogs = () => {
   return (
     <div className=" app__blogs">
       {/* <h1>blogs</h1> */}
-
+      <FeaturedCards blogs={featuredBlogs} />
       <input type="text" placeholder="Search" onChange={handleChange} />
 
       {/* <img src={images.computer} alt="" /> */}
@@ -66,7 +74,9 @@ const Blogs = () => {
               )}
             </>
           ) : (
-            <BlogCards blogs={blogs} />
+            <>
+              <BlogCards blogs={blogs} />
+            </>
           )}
         </div>
         <div className="app__blogs-main-aside">

@@ -16,6 +16,9 @@ import books from "../assets/books.svg";
 import lamp from "../assets/lamp.svg";
 import bookshelf from "../assets/bookshelf.svg";
 import witcherBook from "../assets/witcherBook.jpg";
+
+//taken from https://passionhacks.com/layered-waves-generator/
+import waves1 from "../assets/waves1.svg";
 export default {
   logo,
   testAvatar,
@@ -26,4 +29,5 @@ export default {
   lamp,
   bookshelf,
   witcherBook,
+  waves1,
 };

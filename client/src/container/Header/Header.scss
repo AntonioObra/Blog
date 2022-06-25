@@ -1,5 +1,5 @@
 .app__header {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 
   .app__header-content {
@@ -39,6 +39,16 @@
         text-decoration: underline;
         text-decoration-color: var(--secondary-color);
       }
+    }
+  }
+
+  .app__header-waves {
+    position: relative;
+    bottom: 150px;
+    img {
+      width: 100%;
+      // position: relative;
+      height: 500px;
     }
   }
 }

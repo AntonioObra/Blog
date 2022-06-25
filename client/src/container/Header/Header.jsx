@@ -17,6 +17,9 @@ const Header = () => {
           <p>just my thoughts</p>
         </div>
       </div>
+      <div className="app__header-waves">
+        <img src={images.waves1} alt="" />
+      </div>
     </div>
   );
 };
