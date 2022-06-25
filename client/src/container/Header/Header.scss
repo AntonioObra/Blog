@@ -44,10 +44,10 @@
 
   .app__header-waves {
     position: relative;
-    bottom: 150px;
+    top: -150px;
+    // bottom: 150px;
     img {
       width: 100%;
-      // position: relative;
       height: 500px;
     }
   }

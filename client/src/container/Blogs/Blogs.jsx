@@ -20,7 +20,10 @@ const Blogs = () => {
   useEffect(() => {
     async function fetchBlogs() {
       const posts = await getPosts();
-      setBlogs(posts);
+      //get only posts that are not feautured
+      let postsWithout = posts.filter((post) => !post.node.featuredPost);
+      console.log(postsWithout);
+      setBlogs(postsWithout);
     }
 
     async function fetchFeauteredBlogs() {
@@ -32,6 +35,7 @@ const Blogs = () => {
     fetchFeauteredBlogs();
   }, []);
 
+  console.log(blogs);
   const handleChange = (e) => {
     setSearchInput(e.target.value);
     if (searchInput !== "") {

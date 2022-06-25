@@ -28,6 +28,7 @@ export const getPosts = async () => {
               name
               slug
             }
+            featuredPost
           }
         }
       }
