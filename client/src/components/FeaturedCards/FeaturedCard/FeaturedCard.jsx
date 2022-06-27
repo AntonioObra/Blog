@@ -5,16 +5,28 @@ import { Link } from "react-router-dom";
 
 const FeaturedCard = ({ blog }) => {
   return (
-    <div
-      className="FeaturedCard"
-      style={{ backgroundImage: `url(${blog.featuredImage.url})` }}
-    >
-      <Link to={`/blogs/${blog.slug}`} style={{ textDecoration: "none" }}>
-        <div className="FeaturedCard-content">
-          <h3>{blog.title}</h3>
+    <div className="FeaturedCard">
+      <div className="FeaturedCard-image">
+        <img src={blog.featuredImage.url} alt="" />
+      </div>
+
+      <div className="FeaturedCard-content">
+        <div className="FeaturedCard-content-info">
           <p>{moment(blog.createdAt).format(" MMM DD, YYYY")}</p>
+          <h3>{blog.title}</h3>
         </div>
-      </Link>
+
+        <div className="FeaturedCard-content-button">
+          <button>
+            <Link
+              to={`/blogs/${blog.slug}`}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              read more
+            </Link>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
