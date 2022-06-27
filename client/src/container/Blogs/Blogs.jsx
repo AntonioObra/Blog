@@ -83,10 +83,10 @@ const Blogs = () => {
             </>
           )}
         </div>
-        <div className="app__blogs-main-aside">
+        {/* <div className="app__blogs-main-aside">
           <BlogWidget />
           <Categories />
-        </div>
+        </div> */}
       </main>
     </div>
   );

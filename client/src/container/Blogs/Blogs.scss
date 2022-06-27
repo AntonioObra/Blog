@@ -27,11 +27,11 @@
 
   .app__blogs-main {
     min-height: 100vh;
-    width: 80%;
+    width: 100%;
     margin: 2rem auto;
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: top;
+    // justify-content: space-between;
     .app__blogs-main-img {
       width: 10%;
       // margin: 0 auto;
@@ -45,7 +45,8 @@
     }
 
     .app__blogs-main-blogs {
-      width: 65%;
+      margin: 0 auto;
+      width: 60%;
 
       #ups {
         text-align: center;
