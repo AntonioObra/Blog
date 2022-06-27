@@ -63,24 +63,22 @@ const SingleBlogCard = ({ blog }) => {
   };
   return (
     <div className="SingleBlogCard">
-      <div className="SingleBlogCard-Image">
-        <img src={blog.featuredImage.url} alt="" />
-      </div>
       <div className="SingleBlogCard-Content">
-        <div className="SingleBlogCard-Header ">
-          <img src={blog.author.photo.url} alt="" />
-          <h5>{blog.author.name}</h5>
-          <p> &#183; </p>
-          <p id="SingleBlogCard-Header-Date">
-            {moment(blog.createdAt).format("MMM DD, YYYY")}
-          </p>
-        </div>
         <div className="SingleBlogCard-Main ">
           <div className="SingleBlogCard-Main-Content">
             <Link to={`/blogs/${blog._id}`} style={{ textDecoration: "none" }}>
               <h3> {blog.title}</h3>
             </Link>
           </div>
+        </div>
+        <div className="SingleBlogCard-Header ">
+          <p id="SingleBlogCard-Header-Date">
+            {moment(blog.createdAt).format("MMM DD, YYYY")}
+          </p>
+        </div>
+
+        <div className="SingleBlogCard-Image">
+          <img src={blog.featuredImage.url} alt="" />
         </div>
 
         <div className="SingleBlogCard-Excerpt">

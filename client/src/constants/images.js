@@ -24,6 +24,7 @@ import waves1 from "../assets/waves1.svg";
 import logo3 from "../assets/logo3.svg";
 
 import featuredImage from "../assets/featuredImage.svg";
+import convo from "../assets/convo.svg";
 export default {
   logo,
   testAvatar,
@@ -36,5 +37,6 @@ export default {
   witcherBook,
   waves1,
   logo3,
+  convo,
   featuredImage,
 };

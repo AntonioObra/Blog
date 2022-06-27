@@ -29,8 +29,8 @@ const SingleBlog = () => {
             <div className="SingleBlog-content">
               {" "}
               <SingleBlogCard blog={blog} />
-              <CommentForm slug={blog.slug} />
               <Comments slug={blog.slug} />
+              <CommentForm slug={blog.slug} />
             </div>
             <div className="SingleBlog-aside">
               <BlogWidget

@@ -1,7 +1,7 @@
 .SingleBlog {
   min-height: 100vh;
   background-color: var(--primary-color);
-  padding: 5rem 0;
+  padding: 2rem 0;
 
   font-family: var(--font-base);
 }
@@ -12,10 +12,12 @@
   align-items: top;
   justify-content: space-evenly;
   margin: 0 auto;
+  // flex-direction: column;
 }
 
 .SingleBlog-content {
-  width: 65%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .SingleBlog-aside {

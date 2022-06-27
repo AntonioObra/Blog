@@ -1,19 +1,31 @@
 .BlogWidget {
   width: 100%;
-  background-color: #181717;
+  // background-color: var(--paper-color);
   border-radius: 10px;
 
   h2 {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--accent-color);
   }
   padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
 .BlogWidget-Blogs {
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .BlogWidget-Blogs-image {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .BlogWidget-content {
