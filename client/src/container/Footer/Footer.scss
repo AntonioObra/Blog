@@ -1,0 +1,29 @@
+.Footer {
+  //   background-image: url("../../assets/waves2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 100%;
+  background-size: cover;
+  background-color: var(--accent-color);
+  height: 50vh;
+  margin-top: 5rem;
+  font-family: var(--font-base);
+}
+
+.Footer-img {
+  position: relative;
+  bottom: 200px;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+  }
+}
+
+// .Footer-content {
+//   width: 100%;
+//   height: 50vh;
+//   background-color: var(--accent-color);
+// }

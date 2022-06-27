@@ -10,16 +10,17 @@
   width: 80%;
   display: flex;
   align-items: top;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto;
-  // flex-direction: column;
+  flex-direction: column;
 }
 
 .SingleBlog-content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .SingleBlog-aside {
-  width: 30%;
+  width: 100%;
+  margin: 0 auto;
 }

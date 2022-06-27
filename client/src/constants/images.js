@@ -19,12 +19,14 @@ import witcherBook from "../assets/witcherBook.jpg";
 
 //taken from https://passionhacks.com/layered-waves-generator/
 import waves1 from "../assets/waves1.svg";
+import waves2 from "../assets/waves2.svg";
 
 //taken from https://undraw.co/illustrations
 import logo3 from "../assets/logo3.svg";
 
 import featuredImage from "../assets/featuredImage.svg";
 import convo from "../assets/convo.svg";
+
 export default {
   logo,
   testAvatar,
@@ -36,6 +38,7 @@ export default {
   bookshelf,
   witcherBook,
   waves1,
+  waves2,
   logo3,
   convo,
   featuredImage,

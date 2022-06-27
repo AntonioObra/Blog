@@ -23,7 +23,16 @@ const BlogWidget = ({ categories, slug }) => {
 
   return (
     <div className="BlogWidget">
-      <h2>{/* love what you read? <br /> here are some more!{" "} */}</h2>
+      <div className="BlogWidget-header">
+        <h2>
+          finished reading? <br /> here are more blogs
+        </h2>
+
+        <div className="BlogWidget-Blogs-image">
+          {" "}
+          <img src={images.convo} alt="" />
+        </div>
+      </div>
 
       <div className="BlogWidget-Blogs">
         {/* <div className="BlogWidget-Blogs-content"> */}
@@ -31,10 +40,6 @@ const BlogWidget = ({ categories, slug }) => {
           <FeaturedCard blog={blog} key={index} />
         ))}
         {/* </div> */}
-        {/* <div className="BlogWidget-Blogs-image">
-          {" "}
-          <img src={images.convo} alt="" />
-        </div> */}
       </div>
     </div>
   );
