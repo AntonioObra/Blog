@@ -3,3 +3,4 @@ export { default as Blogs } from "./Blogs/Blogs";
 export { default as About } from "./About/About";
 export { default as Recommendations } from "./Recommendations/Recommendations";
 export { default as SingleBlog } from "./SingleBlog/SingleBlog";
+export { default as FeaturedBlogs } from "./FeaturedBlogs/FeaturedBlogs";

@@ -22,7 +22,7 @@ const Blogs = () => {
       const posts = await getPosts();
       //get only posts that are not feautured
       let postsWithout = posts.filter((post) => !post.node.featuredPost);
-      console.log(postsWithout);
+      // console.log(postsWithout);
       setBlogs(postsWithout);
     }
 
@@ -35,7 +35,7 @@ const Blogs = () => {
     fetchFeauteredBlogs();
   }, []);
 
-  console.log(blogs);
+  // console.log(blogs);
   const handleChange = (e) => {
     setSearchInput(e.target.value);
     if (searchInput !== "") {
@@ -54,7 +54,7 @@ const Blogs = () => {
   return (
     <div className=" app__blogs">
       {/* <h1>blogs</h1> */}
-      <FeaturedCards blogs={featuredBlogs} />
+      {/* <FeaturedCards blogs={featuredBlogs} /> */}
       <input type="text" placeholder="Search" onChange={handleChange} />
 
       {/* <img src={images.computer} alt="" /> */}

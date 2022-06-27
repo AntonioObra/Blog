@@ -188,3 +188,27 @@ export const getFeaturedPosts = async () => {
 
   return result.posts;
 };
+
+export const getNewHerePost = async () => {
+  const query = gql`
+    query GetNewHerePost() {
+      posts(where:{newHere: true}) {
+        
+
+        
+        featuredImage {
+          url
+        }
+        title
+        slug
+        createdAt
+        excerpt
+      }
+    }
+    
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.posts;
+};
