@@ -123,9 +123,9 @@ const Archives = () => {
           className="Archives-Main-Content"
         >
           {searchInput === "" ? (
-            <BlogCards blogs={filterBlogs} />
+            <BlogCards blogs={filterBlogs} node={true} />
           ) : (
-            <BlogCards blogs={searchBlogs} />
+            <BlogCards blogs={searchBlogs} node={true} />
           )}
         </motion.div>
       </div>
