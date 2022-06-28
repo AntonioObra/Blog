@@ -6,6 +6,9 @@ const About = () => {
   return (
     <div className="app__about app">
       <div className="app__about-content">
+        <div className="app__about-img">
+          <img src={images.aboutImage} alt="" />
+        </div>
         <div className="app__about-info">
           <h1>about me</h1>
           <p>
@@ -14,9 +17,6 @@ const About = () => {
             to landing my first job, as well as post weekly reviews of books,
             movies and videogames that i find interesting.
           </p>
-        </div>
-        <div className="app__about-img">
-          <img src={images.books} alt="" />
         </div>
       </div>
     </div>

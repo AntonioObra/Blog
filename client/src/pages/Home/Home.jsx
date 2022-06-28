@@ -5,6 +5,7 @@ import {
   About,
   Recommendations,
   FeaturedBlogs,
+  Footer,
 } from "../../container";
 import { Navbar } from "../../components";
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Blogs />
       {/* <Recommendations />
       <About /> */}
+      <Footer />
     </div>
   );
 };

@@ -1,14 +1,16 @@
 .app__about {
-  height: 60vh;
+  // height: 100vh;
   width: 100%;
-  // margin: 2rem 0;
+  // margin: 2rem 0;ć
+  background-color: var(--primary-color);
 
   .app__about-content {
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: 70vh;
+    width: 80%;
     .app__about-img {
       width: 50%;
       margin: 0 auto;
@@ -16,8 +18,8 @@
       align-items: center;
       justify-content: center;
       img {
-        height: 100%;
-        width: 50%;
+        height: auto;
+        width: 90%;
       }
     }
 
@@ -31,11 +33,13 @@
       margin: 0 auto;
       h1 {
         color: var(--white-color);
-        font-size: 44px;
+        font-size: 54px;
         font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+        // border-bottom: 2px solid var(--secondary-color);
       }
       p {
-        width: 80%;
         color: var(--white-color);
       }
     }
