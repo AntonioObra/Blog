@@ -27,6 +27,8 @@ import logo3 from "../assets/logo3.svg";
 import featuredImage from "../assets/featuredImage.svg";
 import convo from "../assets/convo.svg";
 import aboutImage from "../assets/aboutImage.svg";
+import archives from "../assets/archives.svg";
+import notFound from "../assets/notFound.svg";
 
 export default {
   logo,
@@ -44,4 +46,6 @@ export default {
   convo,
   featuredImage,
   aboutImage,
+  archives,
+  notFound,
 };
