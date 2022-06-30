@@ -4,13 +4,16 @@
   background-color: var(--paper-color);
   border-radius: 20px;
   display: flex;
-  // flex-direction: column;
   align-items: top;
   justify-content: flex-start;
   font-family: var(--font-base);
   margin-bottom: 2rem;
-  // border: 2px solid var(--accent-color);
   padding: 3rem 0;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
 }
 
 .BlogCard-Image {
@@ -23,15 +26,19 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 10px 10px var(--accent-color);
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 0px;
+    width: 0px;
   }
 }
 
 .BlogCard-Content {
   width: 70%;
   height: 100%;
-  // background-color: red;
   padding: 2rem;
 
   .BlogCard-Content-Header {
@@ -67,5 +74,10 @@
     font-family: var(--font-base);
     border: none;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 0 2rem;
   }
 }

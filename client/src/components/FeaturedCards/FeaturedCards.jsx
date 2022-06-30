@@ -6,20 +6,21 @@ import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1024 },
-    items: 2,
-  },
-  desktop: {
-    breakpoint: { max: 1024, min: 768 },
+    breakpoint: { max: 4000, min: 1700 },
     items: 3,
   },
-  tablet: {
-    breakpoint: { max: 768, min: 640 },
+  desktop: {
+    breakpoint: { max: 1700, min: 768 },
     items: 2,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 0 },
+    items: 1,
   },
   mobile: {
     breakpoint: { max: 640, min: 0 },
     items: 1,
+    slidesToSlide: 1,
   },
 };
 
@@ -27,20 +28,19 @@ const FeaturedCards = ({ blogs }) => {
   // console.log("resi");
   return (
     <div
-    // style={{
-    //   display: "flex",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    //   flexWrap: "wrap",
-    //   width: "60%",
-    //   margin: "0 auto",
-    // }}
+      style={{
+        width: "80%",
+        margin: "0 auto",
+        overflow: "hidden",
+      }}
     >
       <Carousel
         responsive={responsive}
         infinite={true}
         transitionDuration={500}
-        centerMode={true}
+        centerMode={false}
+        // itemClass="px-4 mx-20"
+        partialVisbile={false}
       >
         {blogs.map((blog, index) => (
           <FeaturedCard key={index} blog={blog} style={{ width: "40%" }} />

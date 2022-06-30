@@ -35,11 +35,9 @@ const BlogWidget = ({ categories, slug }) => {
       </div>
 
       <div className="BlogWidget-Blogs">
-        {/* <div className="BlogWidget-Blogs-content"> */}
         {relatedBlogs.map((blog, index) => (
           <FeaturedCard blog={blog} key={index} />
         ))}
-        {/* </div> */}
       </div>
     </div>
   );
