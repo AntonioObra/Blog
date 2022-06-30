@@ -1,8 +1,8 @@
 import React from "react";
-import "./BlogCard.scss";
 import moment from "moment";
-
 import { Link } from "react-router-dom";
+
+import "./BlogCard.scss";
 
 const BlogCard = ({ blog }) => {
   return (
@@ -16,12 +16,7 @@ const BlogCard = ({ blog }) => {
           <p id="BlogCard-Header-Date">
             {moment(blog.createdAt).format("MMM DD, YYYY")}
           </p>
-
           <h3> {blog.title}</h3>
-
-          {/* <img src={blog.author.photo.url} alt="" /> */}
-          {/* <h5>{blog.author.name}</h5>
-          <p> &#183; </p> */}
         </div>
         <div className="BlogCard-Content-Main">
           <p>{blog.excerpt}</p>

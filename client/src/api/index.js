@@ -1,8 +1,8 @@
-import axios from "axios";
 import { GraphQLClient, gql } from "graphql-request";
 
 const graphqlAPI = process.env.REACT_APP_GRAPHCMS_ENDPOINT;
 
+//function for posting comments, currently not implemented
 export const comments = async (req, res) => {
   console.log(req);
   const graphQLClient = new GraphQLClient(graphqlAPI, {
@@ -31,12 +31,8 @@ export const comments = async (req, res) => {
     }
   `;
 
-  console.log(req.body);
-
   try {
     const result = await graphQLClient.request(query, req.body);
-    console.log(result);
-
     return res.status(200).send(result);
   } catch (error) {
     console.log(error);

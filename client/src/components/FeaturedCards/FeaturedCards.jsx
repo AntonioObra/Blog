@@ -1,6 +1,5 @@
 import React from "react";
 import FeaturedCard from "./FeaturedCard/FeaturedCard";
-import BlogCard from "../BlogCards/BlogCard/BlogCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -25,7 +24,6 @@ const responsive = {
 };
 
 const FeaturedCards = ({ blogs }) => {
-  // console.log("resi");
   return (
     <div
       style={{
@@ -39,7 +37,6 @@ const FeaturedCards = ({ blogs }) => {
         infinite={true}
         transitionDuration={500}
         centerMode={false}
-        // itemClass="px-4 mx-20"
         partialVisbile={false}
       >
         {blogs.map((blog, index) => (

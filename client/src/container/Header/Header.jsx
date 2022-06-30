@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import { images } from "../../constants";
-import { AppWrap } from "../../wrapper";
+
 import "./Header.scss";
-import { getFeaturedPosts } from "../../services";
-import { FeaturedCards } from "../../components";
 
 const Header = () => {
-  const [featuredBlogs, setFeaturedBlogs] = useState([]);
-
-  useEffect(() => {
-    async function fetchFeauteredBlogs() {
-      const posts = await getFeaturedPosts();
-      setFeaturedBlogs(posts);
-    }
-
-    fetchFeauteredBlogs();
-  }, []);
   return (
     <div className="app__header app">
       <div className="app__header-content">
@@ -31,9 +18,6 @@ const Header = () => {
       <div className="app__header-waves">
         <img src={images.waves1} alt="" />
       </div>
-      {/* <div className="app__header-featuredCards">
-        <FeaturedCards blogs={featuredBlogs} />
-      </div> */}
     </div>
   );
 };

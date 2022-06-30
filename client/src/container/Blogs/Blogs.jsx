@@ -8,7 +8,6 @@ import "./Blogs.scss";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
-  //for author use author->{name, image or whatever you want to get}
   useEffect(() => {
     async function fetchBlogs() {
       const posts = await getRecentPosts();

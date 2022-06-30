@@ -1,3 +1,5 @@
+//not currently implemented
+
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import parse from "html-react-parser";
@@ -9,7 +11,7 @@ const Comments = ({ slug }) => {
 
   useEffect(() => {
     getComments(slug).then((result) => setComments(result));
-  }, []);
+  }, [slug]);
   return (
     <>
       {comments.length > 0 && (

@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./Navbar.scss";
+import React from "react";
 import { Link } from "react-router-dom";
-import { getCategories } from "../../services";
+
+import "./Navbar.scss";
 
 const Navbar = () => {
-  const [categories, setCategories] = useState([]);
-  useEffect(() => {
-    getCategories().then((newCategories) => setCategories(newCategories));
-  }, []);
   return (
     <div className=" app__navbar">
       <div className="nav">

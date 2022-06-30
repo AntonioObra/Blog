@@ -1,6 +1,7 @@
 import React from "react";
-import "./About.scss";
 import { images } from "../../constants";
+
+import "./About.scss";
 
 const About = () => {
   return (

@@ -1,7 +1,5 @@
 .app__about {
-  // height: 100vh;
   width: 100%;
-  // margin: 2rem 0;ć
   background-color: var(--primary-color);
 
   .app__about-content {
@@ -44,7 +42,6 @@
         font-weight: 600;
         text-decoration: underline;
         text-decoration-color: var(--secondary-color);
-        // border-bottom: 2px solid var(--secondary-color);
       }
       p {
         color: var(--white-color);

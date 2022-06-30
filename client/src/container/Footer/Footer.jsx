@@ -13,7 +13,11 @@ const Footer = () => {
           <h1>blog.obradovic</h1>
         </div>
         <div className="Footer-content-main">
-          <a href="https://github.com/AntonioObra" target="_blank">
+          <a
+            href="https://github.com/AntonioObra"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-github"
@@ -31,7 +35,11 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="https://twitter.com/AntonioObra83" target="_blank">
+          <a
+            href="https://twitter.com/AntonioObra83"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-twitter"

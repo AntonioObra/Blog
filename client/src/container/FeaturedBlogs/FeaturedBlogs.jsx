@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { images } from "../../constants";
-import "./FeaturedBlogs.scss";
 import { getFeaturedPosts, getNewHerePost } from "../../services";
 import { FeaturedCards, BlogCard } from "../../components";
-// import { BlogCard } from "../../components/BlogCards/BlogCard/BlogCard";
+
+import "./FeaturedBlogs.scss";
 
 const FeaturedBlogs = () => {
   const [featuredBlogs, setFeaturedBlogs] = useState([]);

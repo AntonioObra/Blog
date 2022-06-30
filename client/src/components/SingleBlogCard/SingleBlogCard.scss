@@ -1,7 +1,6 @@
 .SingleBlogCard {
   width: 100%;
   min-height: 100vh;
-  // background-color: var(--paper-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
 }
 
 .SingleBlogCard-Header {
-  // padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +35,6 @@
   #SingleBlogCard-Header-Date {
     font-size: 14px;
     font-weight: 300;
-    // margin-left: 8px;
     color: var(--white-color);
   }
 
@@ -50,11 +47,6 @@
 }
 
 .SingleBlogCard-Main {
-  // padding: 10px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
   .SingleBlogCard-Main-Content {
     width: 80%;
     padding-top: 1rem;
@@ -66,7 +58,6 @@
       text-align: center;
       text-decoration: underline;
       text-decoration-color: var(--white-color);
-      //   text-underline-offset: 0;
     }
     p {
       font-size: 18px;

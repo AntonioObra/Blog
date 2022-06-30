@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Archives.scss";
 import { images } from "../../constants";
 import { BlogCards } from "../../components";
 import { getPosts, getCategories } from "../../services";
 import { motion } from "framer-motion";
+
+import "./Archives.scss";
 
 const Archives = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -33,6 +34,7 @@ const Archives = () => {
     setFilterBlogs(blogs);
   }, [blogs]);
 
+  //function for searching a post
   const handleChange = (e) => {
     setSearchInput(e.target.value);
     if (searchInput !== "" && activeFilter === "All") {
@@ -56,6 +58,7 @@ const Archives = () => {
     }
   };
 
+  //used for changing category of posts and what post can you search for
   const handleTagFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);

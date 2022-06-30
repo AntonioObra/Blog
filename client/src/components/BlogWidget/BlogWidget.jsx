@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./BlogWidget.scss";
-import moment from "moment";
-import { Link } from "react-router-dom";
 import { getRecentPosts, getSimilarPosts } from "../../services";
 import { FeaturedCard } from "../../components";
 import { images } from "../../constants";
@@ -18,8 +16,6 @@ const BlogWidget = ({ categories, slug }) => {
       getRecentPosts().then((result) => setRelatedBlogs(result));
     }
   }, [slug]);
-
-  console.log(relatedBlogs);
 
   return (
     <div className="BlogWidget">

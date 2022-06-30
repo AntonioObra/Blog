@@ -1,16 +1,14 @@
 .CommentForm {
   width: 100%;
-  // background-color: var(--paper-color);
   border-radius: 10px;
-
+  padding: 1rem 0;
+  margin-bottom: 2rem;
   h3 {
     text-align: center;
     color: var(--white-color);
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
   }
-  padding: 1rem 0;
-  margin-bottom: 2rem;
 }
 
 .CommentForm-Form {
@@ -74,7 +72,6 @@
     padding: 15px 30px;
     border-radius: 50px;
     color: #fff !important;
-    // box-shadow: 0px 14px 80px rgb(252 56 56 / 40%);
     text-decoration: none;
     font-weight: 500;
     justify-content: center;

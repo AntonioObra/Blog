@@ -1,4 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+//not currently implemented
+
+import React, { useState, useRef } from "react";
 import "./CommentForm.scss";
 import { submitComment } from "../../services";
 
@@ -10,13 +12,6 @@ const CommentForm = ({ slug }) => {
   const nameEl = useRef();
   const emailEl = useRef();
   const storeDataEl = useRef();
-
-  console.log(nameEl);
-
-  //   useEffect(() => {
-  //     nameEl.current.value = localStorage.getItem("name");
-  //     emailEl.current.value = localStorage.getItem("email");
-  //   }, []);
 
   const handleCommentSubmit = () => {
     setError(false);

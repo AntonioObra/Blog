@@ -1,7 +1,8 @@
 import React from "react";
-import "./FeaturedCard.scss";
 import moment from "moment";
 import { Link } from "react-router-dom";
+
+import "./FeaturedCard.scss";
 
 const FeaturedCard = ({ blog }) => {
   return (

@@ -2,9 +2,8 @@ import React from "react";
 import "./SingleBlogCard.scss";
 import moment from "moment";
 
-import { Link } from "react-router-dom";
-
 const SingleBlogCard = ({ blog }) => {
+  //workaround for rich text from graphcms
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -87,21 +86,6 @@ const SingleBlogCard = ({ blog }) => {
 
             return getContentFragment(index, children, typeObj, typeObj.type);
           })}
-        </div>
-
-        {/* <div className="SingleBlogCard-Button">
-          <Link to={`/blogs/${blog.slug}`} style={{ textDecoration: "none" }}>
-            <span>read more</span>
-          </Link>
-        </div> */}
-
-        <div className="SingleBlogCard-Footer">
-          {/* {blog.categories.map((category, index) => (
-        <button key={index}>{category.name}</button>
-      ))}
-      <p>3 min read</p>
-      <p> &#183; </p>
-      <p>Selected for you</p> */}
         </div>
       </div>
     </div>
