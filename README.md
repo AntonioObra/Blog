@@ -1,4 +1,6 @@
 # Blog
-Web Application using MERN stack for creating blogs and reviews of books, movies and videogames.
+Web Application made using React and GraphCMS connected with GraphQL. Its main purpose is to make posts about books I read, videogames I found to be worth playing through and occasionall post about my web dev journey.
 
-## resi
+## Tech Stack
+
+
