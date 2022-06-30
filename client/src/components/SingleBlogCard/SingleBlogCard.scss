@@ -70,6 +70,7 @@
       //   text-underline-offset: 0;
     }
     p {
+      font-size: 18px;
       color: var(--white-color);
     }
   }
@@ -84,6 +85,11 @@
   width: 90%;
   margin: 1.5rem auto;
   color: var(--white-color);
+  line-height: 30px;
+
+  p {
+    font-size: 18px;
+  }
 }
 
 .SingleBlogCard-Button {
