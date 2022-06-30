@@ -24,7 +24,6 @@ const FeaturedBlogs = () => {
     fetchNewHereBlog();
   }, []);
 
-  console.log(newHereBlog);
   return (
     <div className="FeaturedBlogs">
       <div className="FeaturedBlogs-header">

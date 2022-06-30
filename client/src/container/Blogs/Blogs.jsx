@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { AppWrap } from "../../wrapper";
 import { BlogCards } from "../../components";
 import { getRecentPosts } from "../../services";
 
@@ -17,11 +16,9 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
-  console.log(blogs);
-
   return (
     <div className=" app__blogs">
-      {/* <h1>blogs</h1> */}
+      <h1>recent blogs</h1>
       <main className="app__blogs-main">
         <div className="app__blogs-main-blogs">
           <BlogCards blogs={blogs} node={false} />
@@ -31,4 +28,4 @@ const Blogs = () => {
   );
 };
 
-export default AppWrap(Blogs, "blogs", "app__whitebg");
+export default Blogs;
