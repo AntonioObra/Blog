@@ -16,9 +16,9 @@ const BlogCard = ({ blog }) => {
           <p id="BlogCard-Header-Date">
             {moment(blog.createdAt).format("MMM DD, YYYY")}
           </p>
-          <Link to={`/blogs/${blog.slug}`} style={{ textDecoration: "none" }}>
-            <h3> {blog.title}</h3>
-          </Link>
+
+          <h3> {blog.title}</h3>
+
           {/* <img src={blog.author.photo.url} alt="" /> */}
           {/* <h5>{blog.author.name}</h5>
           <p> &#183; </p> */}
@@ -26,15 +26,12 @@ const BlogCard = ({ blog }) => {
         <div className="BlogCard-Content-Main">
           <p>{blog.excerpt}</p>
         </div>
-
-        <button>
-          <Link
-            to={`/blogs/${blog.slug}`}
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            read more
-          </Link>{" "}
-        </button>
+        <Link
+          to={`/blogs/${blog.slug}`}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <button>read more</button>
+        </Link>
       </div>
     </div>
   );

@@ -21,6 +21,11 @@ const SingleBlog = () => {
     getPosts().then((posts) => setRelatedBlogs(posts));
   }, [id]);
 
+  //fix for react-router-dom to scroll to the top of the page when loading
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   return (
     <>
       {blog.categories ? (

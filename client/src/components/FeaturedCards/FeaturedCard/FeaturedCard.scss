@@ -1,7 +1,6 @@
 .FeaturedCard {
   width: 400px;
   height: 250px;
-  cursor: pointer;
   background-size: cover;
   border-radius: 20px;
   margin: 2rem 5rem;
@@ -64,6 +63,7 @@
       text-decoration: none;
       font-weight: 500;
       justify-content: center;
+      color: var(--black-color);
       text-align: center;
       letter-spacing: 1px;
       font-family: var(--font-base);

@@ -66,9 +66,7 @@ const SingleBlogCard = ({ blog }) => {
       <div className="SingleBlogCard-Content">
         <div className="SingleBlogCard-Main ">
           <div className="SingleBlogCard-Main-Content">
-            <Link to={`/blogs/${blog._id}`} style={{ textDecoration: "none" }}>
-              <h3> {blog.title}</h3>
-            </Link>
+            <h3> {blog.title}</h3>
           </div>
         </div>
         <div className="SingleBlogCard-Header ">

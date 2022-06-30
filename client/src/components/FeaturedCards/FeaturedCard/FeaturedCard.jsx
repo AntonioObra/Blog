@@ -17,14 +17,12 @@ const FeaturedCard = ({ blog }) => {
         </div>
 
         <div className="FeaturedCard-content-button">
-          <button>
-            <Link
-              to={`/blogs/${blog.slug}`}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              read more
-            </Link>
-          </button>
+          <Link
+            to={`/blogs/${blog.slug}`}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <button>read more</button>
+          </Link>
         </div>
       </div>
     </div>
