@@ -9,3 +9,7 @@ unDraw - collection of free svg illustrations - https://undraw.co/illustrations 
 Tabler Icons - 1424 Open source free SVG icons with various customization provided - https://undraw.co/illustrations <br>
 Passion Hacks - used for creating wave svg icons - https://passionhacks.com/layered-papercut-waves/
 
+## Aware Issues
+### Comments
+There is currently no comment feauture implemented although there are functions and jsx for it.
+
