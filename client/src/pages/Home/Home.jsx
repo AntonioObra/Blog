@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Header,
-  Blogs,
-  About,
-  Recommendations,
-  FeaturedBlogs,
-  Footer,
-} from "../../container";
+import { Header, Blogs, FeaturedBlogs, Footer } from "../../container";
 import { Navbar } from "../../components";
 
 const Home = () => {
@@ -15,10 +8,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <FeaturedBlogs />
-
       <Blogs />
-      {/* <Recommendations />
-      <About /> */}
       <Footer />
     </div>
   );
