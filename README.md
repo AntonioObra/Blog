@@ -5,7 +5,7 @@ Web Application made using React and GraphCMS connected with GraphQL. Its main p
 This project has been created using React for client side and GraphCMS as a backend and data base. 
 
 ### Helpfull sites 
-unDraw - collection of free svg illustrations - https://undraw.co/illustrations
-Tabler Icons - 1424 Open source free SVG icons with various customization provided - https://undraw.co/illustrations
+unDraw - collection of free svg illustrations - https://undraw.co/illustrations <br>
+Tabler Icons - 1424 Open source free SVG icons with various customization provided - https://undraw.co/illustrations <br>
 Passion Hacks - used for creating wave svg icons - https://passionhacks.com/layered-papercut-waves/
 
