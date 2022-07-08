@@ -45,7 +45,6 @@ export const getRecentPosts = async () => {
     query GetPostDetails() {
       posts(
         orderBy: createdAt_DESC,
-        first:3
       ) {
         title
         featuredImage {

@@ -1,35 +1,20 @@
 .app__blogs {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: top;
+  margin: 10rem auto;
+
   font-family: var(--font-base);
-
-  h1 {
-    font-size: 54px;
-    text-align: center;
-    color: var(--white-color);
-    text-decoration: underline;
-    text-decoration-color: var(--secondary-color);
-  }
-
-  input {
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 7px;
-    color: var(--white-color);
-    font-family: var(--font-base);
-    outline: none;
-    padding: 0.95rem;
-    width: 65%;
-    margin: 2rem auto;
-  }
+  background-color: var(--black-color);
 
   .app__blogs-main {
     min-height: 100vh;
-    width: 100%;
+    width: 80%;
     margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    @media screen and (max-width: 1600px) {
+      width: 90%;
+    }
     .app__blogs-main-img {
       width: 10%;
       display: flex;
@@ -43,7 +28,7 @@
 
     .app__blogs-main-blogs {
       margin: 0 auto;
-      width: 60%;
+      width: 55%;
 
       #ups {
         text-align: center;
@@ -57,43 +42,48 @@
 
     .app__blogs-main-aside {
       width: 30%;
-      position: sticky;
-      position: -webkit-sticky;
-      height: 30%;
-      top: 2rem;
+      // top: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: top;
       align-items: top;
+      // margin: 2rem;
+      // background-color: var(--primary-color);
+      border-radius: 20px;
+      // padding: 2rem;
+
+      h4 {
+        text-align: left;
+        font-size: 24px;
+      }
     }
   }
 
-  .Aside-Tags {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    .Aside-Tags-Filter {
-      margin: 0.2rem;
-      color: var(--white-color);
-      padding: 8px 12px;
-      border-radius: 20px;
-      cursor: pointer;
+  .app__blogs-main-aside-categories {
+    h5 {
+      text-align: left;
+      font-size: 24px;
+      margin-bottom: 1rem;
     }
-    .Casual {
-      background-color: var(--primary-color);
-      color: var(--black-color);
-    }
-
-    .Books {
-      background-color: var(--accent-color);
-    }
-    .Videogames {
-      background-color: var(--secondary-color);
-    }
-    .Movies {
-      background-color: var(--black-color);
+    ul {
+      text-align: left;
+      list-style: none;
+      li {
+        cursor: pointer;
+        color: var(--white-color);
+        text-decoration: none;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 18px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px solid var(--secondary-color);
+        padding: 1rem 0;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          transform: translateX(-5px);
+          color: var(--secondary-color);
+        }
+      }
     }
   }
 }

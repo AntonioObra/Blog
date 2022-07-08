@@ -7,7 +7,7 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       <Header />
-      <FeaturedBlogs />
+      {/* <FeaturedBlogs /> */}
       <Blogs />
       <Footer />
     </div>

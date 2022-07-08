@@ -26,26 +26,7 @@ const FeaturedBlogs = () => {
 
   return (
     <div className="FeaturedBlogs">
-      <div className="FeaturedBlogs-main">
-        <div className="FeaturedBlogs-header">
-          {" "}
-          <div className="FeaturedBlogs-img">
-            <img src={images.featuredImage} alt="" />
-          </div>
-          <div className="FeaturedBlogs-headline">
-            <h1>
-              new to the blog? <br /> start here
-            </h1>
-          </div>
-        </div>
-
-        <div className="FeaturedBlogs-newHere">
-          {newHereBlog.length > 0 && <BlogCard blog={newHereBlog[0]} />}
-        </div>
-      </div>
-
       <div className="FeaturedBlogs-content">
-        <h1>featured blogs</h1>
         <FeaturedCards blogs={featuredBlogs} />
       </div>
     </div>
