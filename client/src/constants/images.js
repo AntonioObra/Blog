@@ -10,6 +10,8 @@ import aboutImage from "../assets/aboutImage.svg";
 import archives from "../assets/archives.svg";
 import notFound from "../assets/notFound.svg";
 
+import newHere from "../assets/newHere.svg";
+
 export default {
   waves1,
   waves2,
@@ -19,4 +21,5 @@ export default {
   aboutImage,
   archives,
   notFound,
+  newHere,
 };

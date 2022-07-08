@@ -5,3 +5,4 @@ export { default as SingleBlog } from "./SingleBlog/SingleBlog";
 export { default as FeaturedBlogs } from "./FeaturedBlogs/FeaturedBlogs";
 export { default as Footer } from "./Footer/Footer";
 export { default as Archives } from "./Archives/Archives";
+export { default as NewHere } from "./NewHere/NewHere";
