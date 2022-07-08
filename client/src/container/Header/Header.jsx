@@ -17,6 +17,10 @@ const Header = () => {
       </div>
       <div className="app__header-waves">
         <img src={images.waves1} alt="" />
+        <p>
+          “You could leave life right now. Let that determine what you do and
+          say and think.” <span>– Marcus Aurelius</span>
+        </p>
       </div>
     </div>
   );

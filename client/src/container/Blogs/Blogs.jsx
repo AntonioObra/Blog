@@ -5,6 +5,8 @@ import {
   getRecentPosts,
   getCategories,
 } from "../../services";
+import moment from "moment";
+import { Link } from "react-router-dom";
 
 import "./Blogs.scss";
 
@@ -36,6 +38,8 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
+  console.log(featuredBlogs);
+
   // const handleTagFilter = (item) => {
   //   setActiveFilter(item);
   //   setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -59,8 +63,25 @@ const Blogs = () => {
           <BlogCards blogs={blogs} node={false} />
         </div>
         <div className="app__blogs-main-aside">
-          <h4> featured posts</h4>
-          <FeaturedCards blogs={featuredBlogs} />
+          <div className="app__blogs-main-aside-categories">
+            <h5> featured posts</h5>
+            <ul>
+              {featuredBlogs.map((blog, index) => (
+                <Link
+                  to={`/blogs/${blog.slug}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <li className="Aside-Tags-Filter" key={index}>
+                    <p>{moment(blog.createdAt).format(" MMM DD, YYYY")}</p>
+
+                    {blog.title}
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+
+          {/* <FeaturedCards blogs={featuredBlogs} /> */}
 
           <div className="app__blogs-main-aside-categories">
             <h5>topics</h5>

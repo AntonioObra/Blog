@@ -1,9 +1,9 @@
 .app__blogs {
   width: 100%;
-  margin: 10rem auto;
+  margin: 20rem auto;
 
   font-family: var(--font-base);
-  background-color: var(--black-color);
+  background-color: var(--primary-color);
 
   .app__blogs-main {
     min-height: 100vh;
@@ -60,10 +60,13 @@
   }
 
   .app__blogs-main-aside-categories {
+    margin-bottom: 2rem;
     h5 {
       text-align: left;
       font-size: 24px;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: var(--secondary-color);
     }
     ul {
       text-align: left;

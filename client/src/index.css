@@ -5,14 +5,14 @@
 :root {
   --font-base: "Poppins", sans-serif;
   --primary-color: #ffffff;
-  --primary-color: #e6e6e6;
+  /* --primary-color: #f3f0f0; */
   --white-color: #000000;
   --black-color: #ffffff;
   --secondary-color: #42b883;
   --secondary-color: #0099ff;
   --accent-color: #3f3d56;
   /* --accent-color: #197fc4; */
-  --paper-color: #d4d1d1;
+  --paper-color: #e6e6e6;
 }
 
 * {

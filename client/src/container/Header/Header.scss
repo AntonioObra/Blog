@@ -74,9 +74,18 @@
       }
     }
   }
+}
 
-  .app__header-featuredCards {
+.app__header-waves {
+  p {
+    padding: 5rem 10rem;
+    text-align: center;
+    height: 300px;
+    background-color: var(--secondary-color);
     position: relative;
-    top: -150px;
+    bottom: 150px;
+    color: var(--black-color);
+    font-size: 26px;
+    font-style: italic;
   }
 }

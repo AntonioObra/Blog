@@ -1,7 +1,7 @@
 .BlogCard {
   width: 100%;
   min-height: 250px;
-  background-color: var(--primary-color);
+  background-color: var(--paper-color);
   border-radius: 20px;
   display: flex;
   align-items: top;
@@ -63,7 +63,7 @@
   button {
     display: inline-flex;
     // background-image: linear-gradient(147deg, #3f3d56 0%, #3f3d56 74%);
-    background: var(--primary-color);
+    background: var(--paper-color);
 
     padding: 15px 30px;
     border: 2px solid var(--secondary-color);
