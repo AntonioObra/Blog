@@ -26,17 +26,16 @@
   align-items: center;
 
   h3 {
-    color: var(--secondary-color);
-    text-decoration: underline;
-    text-decoration-color: var(--white-color);
+    color: var(--white-color);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
 
     &:hover {
-      color: var(--white-color);
-
-      text-decoration: underline;
-      text-decoration-color: var(--secondary-color);
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-5px);
+      color: var(--secondary-color) !important;
     }
   }
 }
@@ -59,21 +58,12 @@
       text-decoration: none;
       flex-direction: column;
       font-weight: 500;
+      font-size: 18px;
       transition: all 0.3s ease-in-out;
-      text-decoration: underline;
-      text-decoration-color: var(--secondary-color);
-
       &:hover {
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-5px);
         color: var(--secondary-color);
-
-        text-decoration: underline;
-        text-decoration-color: var(--white-color);
-      }
-    }
-
-    &:hover {
-      div {
-        background-color: var(--accent-color);
       }
     }
   }
