@@ -5,12 +5,15 @@
 :root {
   --font-base: "Poppins", sans-serif;
   --primary-color: #ffffff;
+  /* --primary-color: ; */
   /* --primary-color: #f3f0f0; */
   --white-color: #000000;
   --black-color: #ffffff;
   --secondary-color: #42b883;
   --secondary-color: #0099ff;
+  /* --secondary-color: #a0bef8; */
   --accent-color: #42b883;
+  --accent-color: #b5f0f0;
   /* --accent-color: #197fc4; */
   --paper-color: #e6e6e6;
 }
