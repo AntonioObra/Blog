@@ -4,8 +4,8 @@
 
   width: 100%;
   background-size: cover;
-  background-color: var(--accent-color);
-  height: 50vh;
+  background-color: var(--secondary-color);
+  height: 60vh;
   margin-top: 10rem;
   font-family: var(--font-base);
 
@@ -16,11 +16,11 @@
 
 .Footer-img {
   position: relative;
-  bottom: 200px;
+  bottom: 280px;
   width: 100%;
   img {
     width: 100%;
-    height: 200px;
+    // height: 200px;
     // z-index: 0;
   }
 
@@ -32,7 +32,7 @@
 .Footer-content {
   width: 100%;
   position: relative;
-  bottom: 75px;
+  bottom: 175px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +68,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-      stroke: #42b883;
+      stroke: var(--white-color);
+      transform: translateY(-5px);
     }
   }
 }
