@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  // position: fixed;
+  position: fixed;
   z-index: 2;
   font-family: var(--font-base);
 

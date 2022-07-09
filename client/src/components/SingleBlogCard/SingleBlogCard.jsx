@@ -64,14 +64,14 @@ const SingleBlogCard = ({ blog }) => {
     <div className="SingleBlogCard">
       <div className="SingleBlogCard-Content">
         <div className="SingleBlogCard-Main ">
+          <div className="SingleBlogCard-Header ">
+            <p id="SingleBlogCard-Header-Date">
+              {moment(blog.createdAt).format("MMM DD, YYYY")}
+            </p>
+          </div>
           <div className="SingleBlogCard-Main-Content">
             <h3> {blog.title}</h3>
           </div>
-        </div>
-        <div className="SingleBlogCard-Header ">
-          <p id="SingleBlogCard-Header-Date">
-            {moment(blog.createdAt).format("MMM DD, YYYY")}
-          </p>
         </div>
 
         <div className="SingleBlogCard-Image">

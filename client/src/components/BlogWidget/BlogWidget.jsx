@@ -3,6 +3,8 @@ import "./BlogWidget.scss";
 import { getRecentPosts, getSimilarPosts } from "../../services";
 import { FeaturedCard } from "../../components";
 import { images } from "../../constants";
+import { Link } from "react-router-dom";
+import moment from "moment";
 
 const BlogWidget = ({ categories, slug }) => {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
@@ -19,21 +21,22 @@ const BlogWidget = ({ categories, slug }) => {
 
   return (
     <div className="BlogWidget">
-      <div className="BlogWidget-header">
-        <h2>
-          finished reading? <br /> here are more blogs
-        </h2>
+      <div className="app__blogs-main-aside-categories">
+        <h5> related posts</h5>
+        <ul>
+          {relatedBlogs.map((blog, index) => (
+            <Link
+              to={`/blogs/${blog.slug}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li className="Aside-Tags-Filter" key={index}>
+                <p>{moment(blog.createdAt).format(" MMM DD, YYYY")}</p>
 
-        <div className="BlogWidget-Blogs-image">
-          {" "}
-          <img src={images.convo} alt="" />
-        </div>
-      </div>
-
-      <div className="BlogWidget-Blogs">
-        {relatedBlogs.map((blog, index) => (
-          <FeaturedCard blog={blog} key={index} />
-        ))}
+                {blog.title}
+              </li>
+            </Link>
+          ))}
+        </ul>
       </div>
     </div>
   );
