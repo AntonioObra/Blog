@@ -18,9 +18,11 @@ const Navbar = () => {
           <li className="app__flex">
             <Link to="/new here?">new here?</Link>
           </li>
-          <li className="app__flex">
+
+          {/* will work on this later */}
+          {/* <li className="app__flex">
             <Link to="/books">books</Link>
-          </li>
+          </li> */}
           <li className="app__flex">
             <Link to="/about">about</Link>
           </li>

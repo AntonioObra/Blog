@@ -24,13 +24,8 @@ const NewHere = () => {
           <img src={images.newHere} alt="" />
         </div>
         <div className="app__newHere-info">
-          <h1>new here?</h1>
-          <p>
-            hi. my name is antonio and welcome to my blog. <br /> here i'll
-            document my journey from becoming an aspiring web developer hobbyist
-            to landing my first job, as well as post weekly reviews of books,
-            movies and videogames that i find interesting.
-          </p>
+          <h1>new to the blog?</h1>
+          <h1>start here</h1>
         </div>
       </div>
 
