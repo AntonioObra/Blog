@@ -13,3 +13,11 @@ Passion Hacks - used for creating wave svg icons - https://passionhacks.com/laye
 ### Comments
 There is currently no comment feauture implemented although there are functions and jsx for it.
 
+### Design
+The whole design of the website is still in development stage and the refresh will be done.
+### Books Page
+There is currently not an implementation for the books page.
+
+### Topic selection not working 
+The topic selection is still in the early stages of the development.
+
